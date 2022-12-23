@@ -77,7 +77,7 @@ def updateNote(token: str, id:int, text:str):
 @app.delete('/delete_note')
 def delete_note(token: str, id:int):
     if token == print_token():
-        path = r'C:\Users\Lenova\PycharmProjects\Lab4'+f'\{str(id)}.json'
+        path = r'C:\Users\Evgeniy\PycharmProjects\Lab4'+f'\{str(id)}.json'
         try:
             os.remove(path)
             return f'Заметка {id} удалена'
