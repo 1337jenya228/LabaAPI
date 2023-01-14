@@ -41,3 +41,4 @@ class UpdateNote(BaseModel):
 
 class GetNotesList(BaseModel):
     notes_list: Dict[int, int]
+
